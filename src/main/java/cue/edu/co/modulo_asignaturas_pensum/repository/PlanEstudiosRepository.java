@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PlanEstudiosRepository extends MongoRepository<PlanEstudios, String> {
-    // Métodos personalizados si los necesitas
 }

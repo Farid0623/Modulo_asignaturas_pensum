@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SemestreRepository extends MongoRepository<Semestre, String> {
-    // Métodos personalizados si los necesitas
 }

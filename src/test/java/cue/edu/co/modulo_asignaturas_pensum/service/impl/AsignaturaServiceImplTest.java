@@ -30,7 +30,7 @@ class AsignaturaServiceImplTest {
         entity.setId("id1");
         when(repo.save(any())).thenReturn(entity);
 
-        AsignaturaDTO result = service.createAsignatura(dto, "ADMIN", "usuarioTest");
+        AsignaturaDTO result = service.createAsignatura(dto);
         assertNotNull(result);
         verify(repo, times(1)).save(any());
         verify(publisher, times(1)).publishEvent(any());
